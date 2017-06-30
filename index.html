@@ -24,6 +24,16 @@
 
 	 var Hallohours=angular.module("mobileApp",['ngRoute']);
 
+	 HallohoursApp.config(function($routeProvider){
+
+	 	$routeProvider.when("/home",{templateUrl:"Home.html"})
+
+	 				  .when("/about",{templateUrl:"About.html"})
+	 				  .when("/content us",{templateUrl:"contact us.html"})
+	 				  .otherwise({redirectTo:"/home"})
+
+	 });
+
 </script>	
 </style>
 </head>
@@ -34,8 +44,12 @@
 
 </div>
 
-<div ng-view>Content goes here</div>
-<div>@Laughing Macaw twchnologies pvt.ltd (Footer)</div>
+<div ng-view="">Content goes here</div>
+<div>
+<span>
+	@Laughing Macaw twchnologies pvt.ltd 
+</span>
+</div>
 
 </body>
 
