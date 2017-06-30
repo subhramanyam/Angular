@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Hallohours </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<!--when ever we want to implement we have to use routing src file-->
+
+<script src="https://code.angularjs.org/1.2.16/angular-route.min.js"></script>
+	
+	<style type="text/css">
+		
+	div{
+
+		border: 1px solid blue;
+		height: 150px;
+	}
+
+	</style>
+
+<script type="text/javascript">
+
+	 var Hallohours=angular.module("mobileApp",['ngRoute']);
+
+</script>	
+</style>
+</head>
+<body ng-app="mobileApp">
+<div>
+	<span>Online Hotel application</span>
+	<p><a href="#/home">Home</a>|<a href="#/about">About</a>|<a href="#/contact">contact us</a></p>
+
+</div>
+
+<div ng-view>Content goes here</div>
+<div>@Laughing Macaw twchnologies pvt.ltd (Footer)</div>
+
+</body>
+
+</html>
